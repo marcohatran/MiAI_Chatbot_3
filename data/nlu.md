@@ -6,12 +6,21 @@
 - [Em](cust_sex) là [Trang](cust_name)
 - [Cô](cust_sex) [Vân](cust_name)
 - [Chú](cust_sex) [Hùng](cust_name)
-
+- [Anh](cust_sex) là [Đinh Mạnh Cường](cust_name)
+## intent:give_stk
+- Tài khoản số 2345678
+## intent:give_ban
+- [anh](cust_sex) muốn bán [5900](cust_ban)[vnm](cust_cp)
+- [chi](cust_sex) muốn bán [2000]
 ## intent:ask_lottery
 - Cho anh xem kết quả đê
 - Kết quả số xố hôm này thế nào
 - Mày cho anh hỏi kết quả tý
 - Có kết quả chưa
+## intent: ask_info_stk
+- Anh muốn kiểm tra thông tin tài khoản
+- Anh muốn kiểm tra thông tin tài sản
+
 
 ## intent:greet
 - xin chào
@@ -28,7 +37,8 @@
 - hello 
 - chào 
 - hi 
-- có ai ở đây không?
+- alo
+- Bạn giúp mình được không
 
 ## intent:bye
 - tạm biệt
@@ -36,6 +46,7 @@
 - chào tạm biệt em
 - tạm biệt em
 - tạm biệt em nhé
+- chào bạn
 
 
 ## intent:thank
@@ -50,6 +61,7 @@
 - cảm ơn em
 - cảm ơn em nhiều nhé
 - cảm ơn
+- cảm ơn bạn nhiều
 
 ## intent:ask_func_list
 - bạn có thể làm được những gì

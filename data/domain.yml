@@ -1,6 +1,8 @@
 intents:
 # Ý đồ khách hàng
+ - chao
  - greet
+ - greet_with_name
  - thank
  - bye
  - ask_func_list
@@ -8,9 +10,18 @@ intents:
  - give_name
  - ask_lottery
 
+
 entities:
  - cust_sex
  - cust_name
+ - cust_stk
+ - cust_mk
+ - cust_cp
+ - cust_luong_mua
+ - cust_luong_ban
+ - cust_nvcare
+ 
+ 
 
 slots:
  cust_sex:
@@ -19,14 +30,42 @@ slots:
  cust_name:
   auto_fill: true
   type: text
+ cust_stk:
+  auto_fill: true
+  type: text
+ cust_mk:
+  auto_fill: true
+  type: text
+ cust_cp:
+  auto_fill: true
+  type: text
+ cust_luong_mua:
+  auto_fill: true
+  type: text
+ cust_luong_ban:
+  auto_fill: true
+  type: text
+ cust_luong_mua:
+  auto_fill: true
+  type: text
+ cust_nvcare:
+  auto_fill: true
+  type: text
+
 
 
 templates:
 # Bot trả lời
+ utter_chao:
+  - text: "Chứng khoán VPS xin chào!" 
  utter_greet:
-  - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được không ah?"
+  - text: "Quý khách vui lòng cho biết tên?"
  utter_greet_with_name:
-  - text: "Kính chào {cust_sex} {cust_name}. ABC Shop có thể giúp gì được {cust_sex} {cust_name} ạ?"
+  - text: "Kính chào {cust_sex} {cust_name}. Chứng khoán VPS có thể giúp gì được {cust_sex} {cust_name} ạ?"
+ utter_greet_stk:
+  - text: "{cust_sex} vui lòng cho em xin số tài khoản."
+ utter_greet_mk:
+  - text: "{cust_sex} vui lòng cung cấp mật khẩu của tài khoản"
  utter_bye:
   - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
   - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
@@ -36,14 +75,31 @@ templates:
  utter_func_list:
   - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
  utter_ask_name:
-  - text: "Em họ Bank, tên Bot! Người ta hay gọi em là Bank Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?"
-  - text: "Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo Ngân hàng nhưng em thích gọi bằng tên Tiếng Anh là Bank Bot cho nó Tây!"
+  - text: "Các anh cần cứ gọi em là Bot."
+  - text: "Dạ thưa. Tên của em là Trợ lý ảo VPS!"
  utter_unclear:
   - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+ utter_xn_mua:
+  - text: "Xác nhận đặt lệnh mua {cust_luong_mua} cổ phiếu {cust_cp}"
+  - text: "Đã nhận lệnh mua vào {cust_luong_mua} cổ phiếu{cust_cp}"
+ utter_xn_ban:
+  - text: "Xác nhận đặt lệnh bán {cust_luong_ban} cổ phiếu {cust_cp}."
+  - text: "Em đã nhận lệnh đặt bán {cust_luong_ban} cổ phiếu{cust_cp}."
+ utter_tai_san:
+  -text: "Dạ, tài khoản của quý khách có 5000 tỷ"
+  -text: "Hiện tài khoản của {cust_sex} có 2000 {cust_cp} tương đương 200 triệu"
+  -text: "Hiện tại {cust_name} còn 600 {cust_cp} "
+  -text: "Hiện tại quý khách còn nợ 300 triệu, quý khách có thời gian 1 ngày để thanh toán"
+ utter_doi_nvcare:
+  -text: "{cust_sex} đổi đã sang {cust_nvcare} ."
+  -text: "Đã hoàn thành đổi nhân viên quản lý tài khoản {cust_id} sang nhân viên {cust_nvcare}"
 
 actions:
+ - utter_chao
  - utter_greet
  - utter_greet_with_name
+ - utter_greet_stk
+ - utter_greet_mk
  - utter_bye
  - utter_unclear
  - utter_func_list
