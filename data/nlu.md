@@ -8,10 +8,13 @@
 - [Chú](cust_sex) [Hùng](cust_name)
 - [Anh](cust_sex) là [Đinh Mạnh Cường](cust_name)
 ## intent:give_stk
-- Tài khoản số 2345678
+- Tài khoản số [2345678](cust_stk)
+- tài khoản [2345678](cust_stk)
+- Số tài khoản [4679829](cust_stk)
+- Tài khoản số [4444525](cust_stk)
 ## intent:give_ban
 - [anh](cust_sex) muốn bán [5900](cust_ban)[vnm](cust_cp)
-- [chi](cust_sex) muốn bán [2000]
+- [chi](cust_sex) muốn bán [2000](cust_ban)
 ## intent:ask_lottery
 - Cho anh xem kết quả đê
 - Kết quả số xố hôm này thế nào

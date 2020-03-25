@@ -3,6 +3,12 @@ intents:
  - chao
  - greet
  - greet_with_name
+ - get_stk
+ - get_mk
+ - xn_mua
+ - xn_ban
+ - tai_san
+ - doi_nvcare
  - thank
  - bye
  - ask_func_list
@@ -61,10 +67,10 @@ templates:
  utter_greet:
   - text: "Quý khách vui lòng cho biết tên?"
  utter_greet_with_name:
-  - text: "Kính chào {cust_sex} {cust_name}. Chứng khoán VPS có thể giúp gì được {cust_sex} {cust_name} ạ?"
- utter_greet_stk:
+  - text: "Kính chào {cust_sex} {cust_name}. Chứng khoán VPS có thể giúp gì được {cust_sex} {cust_name}"
+ utter_get_stk:
   - text: "{cust_sex} vui lòng cho em xin số tài khoản."
- utter_greet_mk:
+ utter_get_mk:
   - text: "{cust_sex} vui lòng cung cấp mật khẩu của tài khoản"
  utter_bye:
   - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
@@ -105,4 +111,8 @@ actions:
  - utter_func_list
  - utter_thank
  - utter_ask_name
+ - utter_xn_mua
+ - utter_xn_ban
+ - utter_tai_san
+ - utter_doi_nvcare
  - action_get_lottery
