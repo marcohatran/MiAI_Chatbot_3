@@ -21,23 +21,22 @@
 - [1234](cust_mk)
 ## intent:given_ban
 - [anh](cust_sex) muốn bán [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20 nghìn](cust_gia)
-- [chi](cust_sex) muốn bán [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn](cust_gia)
-- Bán cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20 nghìn](cust_gia)
+- [chi](cust_sex) muốn bán [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20000 đồng](cust_gia)
+- Bán cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20000](cust_gia)
 ## intent:given_mua
-- [anh](cust_sex) muốn mua [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20 nghìn](cust_gia)
-- [chi](cust_sex) muốn mua [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn](cust_gia)
+- [anh](cust_sex) muốn mua [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20000](cust_gia)
+- [chi](cust_sex) muốn mua [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn đồng](cust_gia)
 - mua cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20 nghìn](cust_gia)
+## intent:ask_ts
+- em cho [anh](cust_sex) check thông tin tài sản với.
+- em cho [chị](cust_sex) hỏi tài sản của [chị](cust_sex) trong tài khoản
+- cho [anh](cust_sex) hỏi tình trạng tài sản của [anh](cust_sex) 
+- cho [chị](cust_sex) hỏi tình trạng tài khoản của [chị](cust_sex) với em
 ## intent:ask_lottery
 - Cho anh xem kết quả đê
 - Kết quả số xố hôm này thế nào
 - Mày cho anh hỏi kết quả tý
 - Có kết quả chưa
-## intent:ask_info_stk
-- Anh muốn kiểm tra thông tin tài khoản
-- Anh muốn kiểm tra thông tin tài sản
-## intent:
-
-
 ## intent:greet
 - xin chào
 - chào bạn
