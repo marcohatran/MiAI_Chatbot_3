@@ -20,18 +20,22 @@
 - mật khẩu là [1234](cust_mk)
 - [1234](cust_mk)
 ## intent:given_ban
-- [anh](cust_sex) muốn bán [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20 nghìn](cust_gia)
-- [chi](cust_sex) muốn bán [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20000 đồng](cust_gia)
-- Bán cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20000](cust_gia)
+- [anh](cust_sex) muốn đặt lệnh bán [5900](cust_luong_ban)[vnm](cust_cp) giá [20 nghìn](cust_gia)
+- [chi](cust_sex) muốn đặt lệnh bán [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20000 đồng](cust_gia)
+- đặt bán cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20000](cust_gia)
 ## intent:given_mua
-- [anh](cust_sex) muốn mua [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20000](cust_gia)
-- [chi](cust_sex) muốn mua [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn đồng](cust_gia)
-- mua cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20 nghìn](cust_gia)
+- [anh](cust_sex) muốn đặt lệnh mua [5900](cust_luong_ban)[vnm](cust_cp) giá [20000](cust_gia)
+- [chi](cust_sex) muốn đặt lệnh mua [2000](cust_luong_ban)[fpt](cust_cp) giá [20 nghìn đồng](cust_gia)
+- đặt mua cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) giá [20 nghìn](cust_gia)
 ## intent:ask_ts
 - em cho [anh](cust_sex) check thông tin tài sản với.
 - em cho [chị](cust_sex) hỏi tài sản của [chị](cust_sex) trong tài khoản
 - cho [anh](cust_sex) hỏi tình trạng tài sản của [anh](cust_sex) 
 - cho [chị](cust_sex) hỏi tình trạng tài khoản của [chị](cust_sex) với em
+## intent:yc_nvcare
+- [anh](cust_sex) muốn đổi nhân viên quản lý sang bạn [Nguyễn Thị Quang Fdm](cust_nvcare)
+- [chị](cust_sex) muốn đổi nhân viên giao dịch sang bạn [Đào thị minh quang fdm](cust_nvcare)
+- cho anh đổi sang bạn nhân viên giao dịch [Đào thị minh quang](cust_nvcare)
 ## intent:given_yc
 - Anh muốn đổi nhân viên quản lý
 - Anh muốn kiểm tra thông tin tài sản
