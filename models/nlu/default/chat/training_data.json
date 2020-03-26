@@ -128,6 +128,462 @@
         "text": "Chú Hùng"
       },
       {
+        "intent": "give_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 7,
+            "end": 22,
+            "value": "Đinh Mạnh Cường",
+            "entity": "cust_name"
+          }
+        ],
+        "text": "Anh là Đinh Mạnh Cường"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "2345678",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "Tài khoản số 2345678"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "2345678",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "tài khoản 2345678"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "4679829",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "Số tài khoản 4679829"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "4444525",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "Tài khoản số 4444525"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "1116752",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "1116752"
+      },
+      {
+        "intent": "given_stk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "1854679",
+            "entity": "cust_stk"
+          }
+        ],
+        "text": "1854679"
+      },
+      {
+        "intent": "given_mk",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "1234",
+            "entity": "cust_mk"
+          }
+        ],
+        "text": "Mật khẩu 1234"
+      },
+      {
+        "intent": "given_mk",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "2345",
+            "entity": "cust_mk"
+          }
+        ],
+        "text": "mật khẩu 2345"
+      },
+      {
+        "intent": "given_mk",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "1234",
+            "entity": "cust_mk"
+          }
+        ],
+        "text": "mật khẩu là 1234"
+      },
+      {
+        "intent": "given_mk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1234",
+            "entity": "cust_mk"
+          }
+        ],
+        "text": "1234"
+      },
+      {
+        "intent": "given_ban",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "5900",
+            "entity": "cust_ban"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "vnm",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "20 nghìn",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "anh muốn đặt lệnh bán 5900vnm giá 20 nghìn"
+      },
+      {
+        "intent": "given_ban",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "chi",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "2000",
+            "entity": "cust_ban"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "fpt",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 36,
+            "end": 46,
+            "value": "20000 đồng",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "chi muốn đặt lệnh bán 2000fpt ở giá 20000 đồng"
+      },
+      {
+        "intent": "given_ban",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "value": "3521",
+            "entity": "cust_ban"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "value": "vpb",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "20000",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "đặt bán cho anh 3521vpb ở giá 20000"
+      },
+      {
+        "intent": "given_mua",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "value": "500",
+            "entity": "cust_mua"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "value": "acb",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "value": "20",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "cho anh đặt lệnh mua vào 500acb giá 20"
+      },
+      {
+        "intent": "given_mua",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "chi",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "2000",
+            "entity": "cust_mua"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "adg",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 34,
+            "end": 47,
+            "value": "69 nghìn đồng",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "chi muốn đặt lệnh mua 2000adg giá 69 nghìn đồng"
+      },
+      {
+        "intent": "given_mua",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "value": "3521",
+            "entity": "cust_mua"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "value": "vps",
+            "entity": "cust_cp"
+          },
+          {
+            "start": 36,
+            "end": 44,
+            "value": "14 nghìn",
+            "entity": "cust_gia"
+          }
+        ],
+        "text": "đặt mua cho anh cổ phiếu3521vps giá 14 nghìn"
+      },
+      {
+        "intent": "ask_ts",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "anh",
+            "entity": "cust_sex"
+          }
+        ],
+        "text": "em cho anh check thông tin tài sản với."
+      },
+      {
+        "intent": "ask_ts",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "chị",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "chị",
+            "entity": "cust_sex"
+          }
+        ],
+        "text": "em cho chị hỏi tài sản của chị trong tài khoản"
+      },
+      {
+        "intent": "ask_ts",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 35,
+            "end": 38,
+            "value": "anh",
+            "entity": "cust_sex"
+          }
+        ],
+        "text": "cho anh hỏi tình trạng tài sản của anh"
+      },
+      {
+        "intent": "ask_ts",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "chị",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 37,
+            "end": 40,
+            "value": "chị",
+            "entity": "cust_sex"
+          }
+        ],
+        "text": "cho chị hỏi tình trạng tài khoản của chị với em"
+      },
+      {
+        "intent": "yc_nvcare",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "anh",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 40,
+            "end": 60,
+            "value": "Nguyễn Thị Quang Fdm",
+            "entity": "cust_nvcare"
+          }
+        ],
+        "text": "anh muốn đổi nhân viên quản lý sang bạn Nguyễn Thị Quang Fdm"
+      },
+      {
+        "intent": "yc_nvcare",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "chị",
+            "entity": "cust_sex"
+          },
+          {
+            "start": 42,
+            "end": 64,
+            "value": "Đào thị minh quang fdm",
+            "entity": "cust_nvcare"
+          }
+        ],
+        "text": "chị muốn đổi nhân viên giao dịch sang bạn Đào thị minh quang fdm"
+      },
+      {
+        "intent": "yc_nvcare",
+        "entities": [
+          {
+            "start": 41,
+            "end": 59,
+            "value": "Đào thị minh quang",
+            "entity": "cust_nvcare"
+          }
+        ],
+        "text": "cho anh đổi sang bạn nhân viên giao dịch Đào thị minh quang"
+      },
+      {
+        "intent": "given_yc",
+        "text": "Anh muốn đổi nhân viên quản lý"
+      },
+      {
+        "intent": "given_yc",
+        "text": "Anh muốn kiểm tra thông tin tài sản"
+      },
+      {
+        "intent": "given_yc",
+        "text": "Cho mình đăng ký chuyển môi giới."
+      },
+      {
+        "intent": "given_yc",
+        "text": "cho mình kiểm tra thông tin tài khoản"
+      },
+      {
+        "intent": "given_yc",
+        "text": "Cho mình mua"
+      },
+      {
+        "intent": "given_yc",
+        "text": "Cho mình bán"
+      },
+      {
         "intent": "ask_lottery",
         "text": "Cho anh xem kết quả đê"
       },
@@ -201,7 +657,11 @@
       },
       {
         "intent": "greet",
-        "text": "có ai ở đây không?"
+        "text": "alo"
+      },
+      {
+        "intent": "greet",
+        "text": "Bạn giúp mình được không"
       },
       {
         "intent": "bye",
@@ -222,6 +682,10 @@
       {
         "intent": "bye",
         "text": "tạm biệt em nhé"
+      },
+      {
+        "intent": "bye",
+        "text": "chào bạn"
       },
       {
         "intent": "thank",
@@ -266,6 +730,10 @@
       {
         "intent": "thank",
         "text": "cảm ơn"
+      },
+      {
+        "intent": "thank",
+        "text": "cảm ơn bạn nhiều"
       },
       {
         "intent": "ask_func_list",

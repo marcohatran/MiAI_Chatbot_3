@@ -6,17 +6,14 @@
     "utter_bye": {
       "slots": []
     },
-    "utter_greet_with_name": {
+    "utter_thank": {
       "slots": []
     },
     "utter_func_list": {
       "slots": []
-    },
-    "utter_thank": {
-      "slots": []
     }
   },
-  "python": "3.7.4",
+  "python": "3.6.8",
   "max_histories": [
     1,
     5,
@@ -28,7 +25,7 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20200324-133514",
+  "trained_at": "20200326-192401",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

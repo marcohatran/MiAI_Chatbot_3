@@ -1,22 +1,51 @@
 %YAML 1.1
 ---
 actions:
+- utter_chao
 - utter_greet
 - utter_greet_with_name
+- utter_get_stk
+- utter_get_mk
 - utter_bye
 - utter_unclear
 - utter_func_list
 - utter_thank
 - utter_ask_name
+- utter_xn_mua
+- utter_xn_ban
+- utter_tai_san
+- utter_doi_nvcare
 - action_get_lottery
 config:
   store_entities_as_slots: true
 entities:
 - cust_sex
 - cust_name
+- cust_stk
+- cust_mk
+- cust_cp
+- cust_mua
+- cust_ban
+- cust_nvcare
 forms: []
 intents:
+- chao:
+    use_entities: true
 - greet:
+    use_entities: true
+- greet_with_name:
+    use_entities: true
+- given_stk:
+    use_entities: true
+- given_mk:
+    use_entities: true
+- given_mua:
+    use_entities: true
+- given_ban:
+    use_entities: true
+- ask_ts:
+    use_entities: true
+- yc_nvcare:
     use_entities: true
 - thank:
     use_entities: true
@@ -31,7 +60,27 @@ intents:
 - ask_lottery:
     use_entities: true
 slots:
+  cust_ban:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cust_cp:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cust_mk:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cust_mua:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   cust_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cust_nvcare:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -39,26 +88,48 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  cust_stk:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_name:
-  - text: Em họ Bank, tên Bot! Người ta hay gọi em là Bank Bot thông minh xinh đẹp
-      giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?
-  - text: Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo Ngân hàng nhưng em thích gọi
-      bằng tên Tiếng Anh là Bank Bot cho nó Tây!
+  - text: Các anh cần cứ gọi em là Bot.
+  - text: Dạ thưa. Tên của em là Trợ lý ảo VPS!
   utter_bye:
   - text: Kính chào tạm biệt và mong sớm gặp lại quý khách!
   - text: Kính chào tạm biệt và chúc quý khách một ngày tốt lành!
+  utter_chao:
+  - text: Chứng khoán VPS xin chào!
+  utter_doi_nvcare:
+  - text: '{cust_sex} đổi đã sang {cust_nvcare} .'
+  - text: Đã hoàn thành đổi nhân viên quản lý tài khoản sang nhân viên {cust_nvcare}
   utter_func_list:
   - text: 'Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ
       em chỉ chat thôi!'
+  utter_get_mk:
+  - text: '{cust_sex} vui lòng cung cấp mật khẩu của tài khoản'
+  utter_get_stk:
+  - text: '{cust_sex} vui lòng cho em xin số tài khoản.'
   utter_greet:
-  - text: Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được
-      không ah?
+  - text: Quý khách vui lòng cho biết tên?
   utter_greet_with_name:
-  - text: Kính chào {cust_sex} {cust_name}. ABC Shop có thể giúp gì được {cust_sex}
-      {cust_name} ạ?
+  - text: Kính chào {cust_sex} {cust_name}. Chứng khoán VPS có thể giúp gì được {cust_sex}
+      {cust_name}
+  utter_tai_san:
+  - text: Dạ, tài khoản của quý khách có 5000 tỷ
+  - text: Hiện tài khoản của {cust_sex} có 2000 {cust_cp} tương đương 200 triệu
+  - text: 'Hiện tại {cust_name} còn 600 {cust_cp} '
+  - text: Hiện tại quý khách còn nợ 300 triệu, quý khách có thời gian 1 ngày để thanh
+      toán
   utter_thank:
   - text: Cảm ơn quý khách quá khen ah!
   - text: Dạ không có gì, đó là trách nhiệm của em mà!
   utter_unclear:
   - text: 'Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. '
+  utter_xn_ban:
+  - text: Xác nhận đặt lệnh bán {cust_ban} cổ phiếu {cust_cp}.
+  - text: Em đã nhận lệnh đặt bán {cust_ban} cổ phiếu{cust_cp}.
+  utter_xn_mua:
+  - text: Xác nhận đặt lệnh mua {cust_mua} cổ phiếu {cust_cp}
+  - text: Đã nhận lệnh mua vào {cust_mua} cổ phiếu{cust_cp}

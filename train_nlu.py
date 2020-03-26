@@ -29,7 +29,7 @@ def ask_question(text):
     print(interpreter.parse(text))
 
 
-ask_question("Mày cho anh hỏi kết quả cái")
-ask_question("Kết quả thế nào mày")
+ask_question("Anh muốn đổi nhân viên quản lý")
+ask_question("Cho mình mua")
 
 

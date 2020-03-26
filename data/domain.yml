@@ -23,8 +23,8 @@ entities:
  - cust_stk
  - cust_mk
  - cust_cp
- - cust_luong_mua
- - cust_luong_ban
+ - cust_mua
+ - cust_ban
  - cust_nvcare
  
  
@@ -45,13 +45,10 @@ slots:
  cust_cp:
   auto_fill: true
   type: text
- cust_luong_mua:
+ cust_mua:
   auto_fill: true
   type: text
- cust_luong_ban:
-  auto_fill: true
-  type: text
- cust_luong_mua:
+ cust_ban:
   auto_fill: true
   type: text
  cust_nvcare:
@@ -86,26 +83,26 @@ templates:
  utter_unclear:
   - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
  utter_xn_mua:
-  - text: "Xác nhận đặt lệnh mua {cust_luong_mua} cổ phiếu {cust_cp}"
-  - text: "Đã nhận lệnh mua vào {cust_luong_mua} cổ phiếu{cust_cp}"
+  - text: "Xác nhận đặt lệnh mua {cust_mua} cổ phiếu {cust_cp}"
+  - text: "Đã nhận lệnh mua vào {cust_mua} cổ phiếu{cust_cp}"
  utter_xn_ban:
-  - text: "Xác nhận đặt lệnh bán {cust_luong_ban} cổ phiếu {cust_cp}."
-  - text: "Em đã nhận lệnh đặt bán {cust_luong_ban} cổ phiếu{cust_cp}."
+  - text: "Xác nhận đặt lệnh bán {cust_ban} cổ phiếu {cust_cp}."
+  - text: "Em đã nhận lệnh đặt bán {cust_ban} cổ phiếu{cust_cp}."
  utter_tai_san:
-  -text: "Dạ, tài khoản của quý khách có 5000 tỷ"
-  -text: "Hiện tài khoản của {cust_sex} có 2000 {cust_cp} tương đương 200 triệu"
-  -text: "Hiện tại {cust_name} còn 600 {cust_cp} "
-  -text: "Hiện tại quý khách còn nợ 300 triệu, quý khách có thời gian 1 ngày để thanh toán"
+  - text: "Dạ, tài khoản của quý khách có 5000 tỷ"
+  - text: "Hiện tài khoản của {cust_sex} có 2000 {cust_cp} tương đương 200 triệu"
+  - text: "Hiện tại {cust_name} còn 600 {cust_cp} "
+  - text: "Hiện tại quý khách còn nợ 300 triệu, quý khách có thời gian 1 ngày để thanh toán"
  utter_doi_nvcare:
-  -text: "{cust_sex} đổi đã sang {cust_nvcare} ."
-  -text: "Đã hoàn thành đổi nhân viên quản lý tài khoản {cust_id} sang nhân viên {cust_nvcare}"
+  - text: "{cust_sex} đổi đã sang {cust_nvcare} ."
+  - text: "Đã hoàn thành đổi nhân viên quản lý tài khoản sang nhân viên {cust_nvcare}"
 
 actions:
  - utter_chao
  - utter_greet
  - utter_greet_with_name
- - utter_greet_stk
- - utter_greet_mk
+ - utter_get_stk
+ - utter_get_mk
  - utter_bye
  - utter_unclear
  - utter_func_list
