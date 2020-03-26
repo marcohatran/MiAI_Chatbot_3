@@ -32,6 +32,13 @@
 - em cho [chị](cust_sex) hỏi tài sản của [chị](cust_sex) trong tài khoản
 - cho [anh](cust_sex) hỏi tình trạng tài sản của [anh](cust_sex) 
 - cho [chị](cust_sex) hỏi tình trạng tài khoản của [chị](cust_sex) với em
+## intent:given_yc
+- Anh muốn đổi nhân viên quản lý
+- Anh muốn kiểm tra thông tin tài sản
+- Cho mình đăng ký chuyển môi giới.
+- cho mình kiểm tra thông tin tài khoản
+- Cho mình mua
+- Cho mình bán
 ## intent:ask_lottery
 - Cho anh xem kết quả đê
 - Kết quả số xố hôm này thế nào
