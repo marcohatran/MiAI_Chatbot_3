@@ -7,22 +7,35 @@
 - [Cô](cust_sex) [Vân](cust_name)
 - [Chú](cust_sex) [Hùng](cust_name)
 - [Anh](cust_sex) là [Đinh Mạnh Cường](cust_name)
-## intent:give_stk
+## intent:given_stk
 - Tài khoản số [2345678](cust_stk)
 - tài khoản [2345678](cust_stk)
 - Số tài khoản [4679829](cust_stk)
 - Tài khoản số [4444525](cust_stk)
-## intent:give_ban
-- [anh](cust_sex) muốn bán [5900](cust_ban)[vnm](cust_cp)
-- [chi](cust_sex) muốn bán [2000](cust_ban)
+- [1116752](cust_stk)
+- [1854679](cust_stk)
+## intent:given_mk
+- Mật khẩu [1234](cust_mk)
+- mật khẩu [2345](cust_mk)
+- mật khẩu là [1234](cust_mk)
+- [1234](cust_mk)
+## intent:given_ban
+- [anh](cust_sex) muốn bán [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20 nghìn](cust_gia)
+- [chi](cust_sex) muốn bán [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn](cust_gia)
+- Bán cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20 nghìn](cust_gia)
+## intent:given_mua
+- [anh](cust_sex) muốn mua [5900](cust_luong_ban)[vnm](cust_cp) ở giá [20 nghìn](cust_gia)
+- [chi](cust_sex) muốn mua [2000](cust_luong_ban)[fpt](cust_cp) ở giá [20 nghìn](cust_gia)
+- mua cho [anh](cust_sex) [3521](cust_luong_ban)[vpb](cust_cp) ở giá [20 nghìn](cust_gia)
 ## intent:ask_lottery
 - Cho anh xem kết quả đê
 - Kết quả số xố hôm này thế nào
 - Mày cho anh hỏi kết quả tý
 - Có kết quả chưa
-## intent: ask_info_stk
+## intent:ask_info_stk
 - Anh muốn kiểm tra thông tin tài khoản
 - Anh muốn kiểm tra thông tin tài sản
+## intent:
 
 
 ## intent:greet

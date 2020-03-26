@@ -3,12 +3,12 @@ intents:
  - chao
  - greet
  - greet_with_name
- - get_stk
- - get_mk
- - xn_mua
- - xn_ban
- - tai_san
- - doi_nvcare
+ - given_stk
+ - given_mk
+ - given_mua
+ - given_ban
+ - ask_ts
+ - yc_nvcare
  - thank
  - bye
  - ask_func_list
